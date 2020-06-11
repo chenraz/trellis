@@ -120,13 +120,20 @@ $ mkdir example.com && cd example.com
 2. Install Trellis:
 
 ```bash
-$ git clone --depth=1 git@github.com:roots/trellis.git && rm -rf trellis/.git
+$ git clone git@github.com:chenraz/trellis.git
 ```
 
 3. Install Bedrock into the `site` directory:
 
 ```bash
 $ composer create-project roots/bedrock site
+```
+
+## Update upstream from original trellis repo
+
+```bash
+$ git fetch upstream
+$ git merge upstream/master
 ```
 
 ## Local development setup
