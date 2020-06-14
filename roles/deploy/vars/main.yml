@@ -5,7 +5,7 @@ wordpress_env_defaults:
   disable_wp_cron: true
   wp_env: "{{ env }}"
   wp_home: "{{ project.ssl.enabled | default(false) | ternary('https', 'http') }}://{{ project.site_hosts | map(attribute='canonical') | first }}"
-  wp_siteurl: "{{ project.ssl.enabled | default(false) | ternary('https', 'http') }}://{{ project.site_hosts | map(attribute='canonical') | first }}/wp"
+  wp_siteurl: "{{ project.ssl.enabled | default(false) | ternary('https', 'http') }}://{{ project.site_hosts | map(attribute='canonical') | first }}"
   domain_current_site: "{{ project.site_hosts | map(attribute='canonical') | first }}"
   git_sha: "{{ git_clone.after }}"
   release_version: "{{ deploy_helper.new_release }}"

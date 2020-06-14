@@ -27,8 +27,8 @@
   - block:
     - name: Push uploads
       synchronize:
-        src: "{{ project.local_path }}/web/app/uploads/"
-        dest: "{{ project_root }}/current/web/app/uploads/"
+        src: "{{ project.local_path }}/web/wp-content/uploads/"
+        dest: "{{ project_root }}/current/web/wp-content/uploads/"
         mode: push
         delete: yes
         recursive: yes
@@ -43,8 +43,8 @@
 
     - name: Pull uploads
       synchronize:
-        src: "{{ project_root }}/current/web/app/uploads/"
-        dest: "{{ project.local_path }}/web/app/uploads/"
+        src: "{{ project_root }}/current/web/wp-content/uploads/"
+        dest: "{{ project.local_path }}/web/wp-content/uploads/"
         mode: pull
         delete: yes
         recursive: yes
