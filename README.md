@@ -34,18 +34,26 @@
 
 # Tilnet fork
 
-## Trellis
-
-```
-cd $ROOT_FOLDER
-git clone https://github.com/chenraz/trellis.git
-```
-
 ## bedrock
 ```
 cd $ROOT_FOLDER
 composer create-project roots/bedrock site
 ```
+
+## Trellis
+
+```
+cd $ROOT_FOLDER
+git clone https://github.com/chenraz/trellis.git
+cd trellis
+```
+
+And, after configuring the YML files:
+```
+cd trellis
+vagrant up
+```
+
 
 
 ## Supporting
