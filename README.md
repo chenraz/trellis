@@ -32,6 +32,22 @@
   <a href="https://roots.io">Official Website</a> | <a href="https://roots.io/docs/trellis/master/installation/">Documentation</a> | <a href="CHANGELOG.md">Change Log</a>
 </p>
 
+# Tilnet fork
+
+## Trellis
+
+```
+cd $ROOT_FOLDER
+git clone https://github.com/chenraz/trellis.git
+```
+
+## bedrock
+```
+cd $ROOT_FOLDER
+composer create-project roots/bedrock site
+```
+
+
 ## Supporting
 
 **Trellis** is an open source project and completely free to use.
