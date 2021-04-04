@@ -1,7 +1,7 @@
 ---
 vagrant_ip: '192.168.50.19'
 vagrant_cpus: 2
-vagrant_memory: 2048 # in MB
+vagrant_memory: 4096 # in MB
 vagrant_box: 'bento/ubuntu-20.04'
 vagrant_box_version: '>= 202012.23.0'
 vagrant_ansible_version: '2.9.10'
