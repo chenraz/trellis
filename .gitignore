@@ -7,3 +7,4 @@ vendor/roles
 .trellis/virtualenv
 database_backup/* 
 log
+*.log
